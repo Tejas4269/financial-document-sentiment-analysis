@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Data and generated artifacts
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+models/*.joblib
+models/*.pkl
+reports/*.png
+reports/*.json
+!reports/.gitkeep
+
+# Environment / IDE
+.env
+.vscode/
+.idea/
+.DS_Store
