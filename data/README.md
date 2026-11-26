@@ -1,19 +1,17 @@
 # Dataset setup
 
-This project is designed for the **Financial PhraseBank** dataset by Malo et al. (2014).
+This project uses the **Financial PhraseBank** dataset described by Malo et al. (2014).
 
-The dataset contains financial news sentences labelled as positive, neutral, or negative by human annotators. For this binary classification project, neutral examples are excluded:
+The corpus contains financial news sentences labelled positive, neutral, or negative. For this binary classification task, neutral examples are excluded:
 - positive → 1
 - negative → 0
 - neutral → excluded
 
 ## Obtain the data
 
-1. Visit the dataset page: https://www.researchgate.net/publication/251231 વિચાર
-2. Obtain the Financial PhraseBank dataset under its applicable research/use terms.
-3. Select one of the agreement-level sentence files, preferably `Sentences_75Agree.txt`.
-4. Place the text file at `data/raw/Sentences_75Agree.txt`.
+1. Find the Financial PhraseBank dataset through the authors' project/research page or a trusted academic dataset repository.
+2. Review the dataset's licence and terms before downloading or using it.
+3. Choose an agreement-level file, preferably `Sentences_75Agree.txt`.
+4. Place it at `data/raw/Sentences_75Agree.txt`.
 
-The dataset is not included in this repository. Please review and comply with the dataset's licence and terms before using or redistributing it.
-
-The training script accepts the standard Financial PhraseBank format, where each line contains a sentence followed by `@` and its sentiment label.
+The dataset is not included in this repository. The code expects each line in the standard format: sentence text, followed by `@`, followed by the sentiment label. For example: `The company reported higher earnings@positive`.
